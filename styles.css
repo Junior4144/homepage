@@ -1,4 +1,73 @@
+
+@font-face {
+    font-family: 'playfair_displayregular';
+    src: url('playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+         url('playfairdisplay-variablefont_wght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('roboto-variablefont_wdthwght-webfont.woff2') format('woff2'),
+         url('roboto-variablefont_wdthwght-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 *{
     margin:0;
     padding:0;
+}
+body{
+    padding:60px;
+}
+
+img {
+    width:500px;
+    height:auto;
+}
+
+header{
+    display:flex;
+    
+
+}
+.main-description-container{
+    border:1px solid black;
+    padding:50px;
+    padding-left: 25px;
+    
+    display:flex;
+    flex-direction: column;
+    gap:30x;
+}
+
+.description-items img{
+    width:25px;
+    height: 25px;
+}
+
+
+/*  */
+.description-title{
+    font-size: 4rem;
+    font-family: 'robotoregular';
+}
+.description-text{
+    font-size: 1.5rem;
+    color: rgb(107, 105, 105);
+}
+.itemcontainer{
+    display:flex;
+    justify-content: flex-end;
+}
+.description-items{
+    display:flex;
 }
