@@ -1,8 +1,8 @@
 
 @font-face {
     font-family: 'playfair_displayregular';
-    src: url('playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
-         url('playfairdisplay-variablefont_wght-webfont.woff') format('woff');
+    src: url('./fonts/playfairdisplay-variablefont_wght-webfont.woff2') format('woff2'),
+         url('./fonts/playfairdisplay-variablefont_wght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -13,8 +13,8 @@
 
 @font-face {
     font-family: 'robotoregular';
-    src: url('roboto-variablefont_wdthwght-webfont.woff2') format('woff2'),
-         url('roboto-variablefont_wdthwght-webfont.woff') format('woff');
+    src: url('./fonts/roboto-variablefont_wdthwght-webfont.woff2') format('woff2'),
+         url('./fonts/roboto-variablefont_wdthwght-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -24,50 +24,124 @@
 *{
     margin:0;
     padding:0;
+    box-sizing: border-box;
 }
 body{
-    padding:60px;
+    /* overflow: hidden; */
 }
 
 img {
-    width:500px;
-    height:auto;
+    
+    height:30px;
+    
+
+}
+.main-image-container img{
+    width:550px;
+    height:600px;
 }
 
 header{
     display:flex;
+    padding: 70px;
     
+    z-index: 0;
+    background-color: rgb(35, 144, 207);
 
+    
+}
+
+.main-image-container{
+    z-index: 3;
 }
 .main-description-container{
-    border:1px solid black;
+    
+    z-index: 3;
     padding:50px;
     padding-left: 25px;
+
+    margin-top: 60px;
+    margin-bottom: 200px;
     
+    border:1px solid black;
     display:flex;
     flex-direction: column;
-    gap:30x;
+    gap:20px;
+    
+    max-width: 750px;
+
 }
 
-.description-items img{
-    width:25px;
-    height: 25px;
-}
 
 
-/*  */
+
+/*  description */
 .description-title{
-    font-size: 4rem;
+    font-size: 3.2rem;
     font-family: 'robotoregular';
 }
 .description-text{
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: rgb(107, 105, 105);
+    line-height: 40px;
 }
 .itemcontainer{
     display:flex;
     justify-content: flex-end;
+    
 }
 .description-items{
+    display:flex;
+    gap:10px;
+}
+.description-items img{
+    width:80px;
+    height: 50px;
+}
+.project-container-title{
+    width:100%;
+    min-height: 500px;
+    background-color: white;
+}
+
+
+
+footer{
+    background-color: rgb(35, 144, 207);
+    display:flex;
+    justify-content: space-between;
+    padding:50px;
+    min-height: 500px;
+    font-family: 'playfair_displayregular';
+}
+.contact-container{
+    
+    min-width: 400px;
+    color:white;
+    font-size: 1.2rem;
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.contact-title{
+    font-size: 2rem;
+}
+.contact-tel-container, .contact-email-container{
+    display:flex;
+    gap:10px;
+}
+
+
+
+.contact-items{
+    display:flex;
+    gap:10px;
+}
+.contact-image-container img{
+    width:600px;
+    height:auto;
+}
+
+.contact-items{
     display:flex;
 }
